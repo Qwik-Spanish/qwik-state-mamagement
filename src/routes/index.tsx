@@ -12,6 +12,8 @@ import {
   StoreNORecursivity,
   StoreRecursivity,
   StoreWithArrayValuesRecursivity,
+  StoreWithArrayValuesRecursivityThree,
+  StoreWithArrayValuesRecursivityTwo,
 } from '~/components/state/store';
 
 export default component$(() => {
@@ -31,6 +33,12 @@ export default component$(() => {
       <hr />
       <h2>5.- useStore - CON Recursividad y valores de array</h2>
       <StoreWithArrayValuesRecursivity />
+      <hr />
+      <h2>5.- useStore - CON Recursividad y valores de array (II)</h2>
+      <StoreWithArrayValuesRecursivityTwo />
+      <hr />
+      <h2>5.- useStore - CON Recursividad y valores de array (III)</h2>
+      <StoreWithArrayValuesRecursivityThree />
       <hr />
       <h2>6.- useSignal - Pasar información estado entre componentes</h2>
       <PropsSignal />

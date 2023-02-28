@@ -10,7 +10,7 @@ export const Parent = component$(() => {
   });
 
   return (
-    <div style="border: 1px solid red; padding: 10px; margin: 5px">
+    <div style="border: 2px solid red; padding: 10px; margin: 5px">
       Info in Parent (Counter {userData.count})
       <hr />
       <Child userData={userData} />
@@ -20,7 +20,7 @@ export const Parent = component$(() => {
 
 export const Child = component$(({ userData }: any) => {
   return (
-    <div style="border: 1px solid green;margin: 5px">
+    <div style="border: 2px solid green;margin: 5px">
       <button onClick$={() => userData.count++}>+1</button>
       &nbsp;&nbsp;Count: {userData.count}
     </div>

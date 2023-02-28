@@ -20,7 +20,7 @@ import {
     useContextProvider(CONTEXT_ID, counterStore);
   
     return (
-      <div style="border: 1px solid red; padding: 10px; margin: 5px">
+      <div style="border: 2px solid red; padding: 10px; margin: 5px">
         Info in Parent (Counter {counterStore.counter})
         <hr />
         <Second />
@@ -31,7 +31,7 @@ import {
   export const Second = component$(() => {
     const counterStore = useContext(CONTEXT_ID) as { counter: number};
     return (
-      <div style="border: 1px solid green;margin: 5px">
+      <div style="border: 2px solid green;margin: 5px">
         Second (Counter) : {counterStore.counter}
         <br />
         <button onClick$={() => counterStore.counter++}>+ 1</button>
@@ -44,7 +44,7 @@ import {
   export const Third = component$(() => {
     const counterStore = useContext(CONTEXT_ID)  as { counter: number};
     return (
-      <div style="border: 5px solid orange;margin: 5px">
+      <div style="border: 2px solid orange;margin: 5px">
         <button onClick$={() => counterStore.counter++}>+1</button>
         &nbsp;&nbsp;Count: {counterStore.counter} (Third)
       </div>
