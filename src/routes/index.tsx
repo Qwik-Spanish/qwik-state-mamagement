@@ -64,11 +64,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'Qwik - Manejo de los estados / State management',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: 'Resultado del tutorial publicado en Medium (https://mugan86.medium.com/qwik-state-management-d42eb31471c8) sobre como trabajar con el estado de las aplicaciones mediante useSignal y useStore',
     },
   ],
 };
