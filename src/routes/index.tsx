@@ -1,4 +1,4 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import {
   BasicSignal,
@@ -17,8 +17,16 @@ import {
 } from '~/components/state/store';
 
 export default component$(() => {
+  useStylesScoped$(`
+    p {
+      font-size: large;
+      margin-bottom: 1.5rem;
+    }
+  `)
   return (
     <div>
+      <p>Todo lo que se ve a continuación está explicado paso a paso en el <a href="https://mugan86.medium.com/qwik-state-management-d42eb31471c8" target="_blank">siguiente artículo</a>. Si queréis ver paso a paso el desarrollo del curso de Qwik mediante artículos <b><u>os invito</u> a que os suscribáis y <a href="https://mugan86.medium.com/" target="_blank">me sigáis en Medium (TOTALMENTE GRATIS)</a></b> y consultéis <a href="https://mugan86.medium.com/list/qwik-paso-a-paso-desde-0-al-detalle-e7df8b471166" target="_blank">esta lista de artículos (en orden de 0 a más)</a> para aprender todo sobre Qwik</p>
+      <hr/>
       <h2>1.- useSignal Básico</h2>
       <BasicSignal />
       <hr />
